@@ -5,7 +5,9 @@
     <meta charset="utf-8" />
     <title>Bitcoin Connect</title>
     <script type="module">
-      import {onConnected} from 'https://esm.sh/@getalby/bitcoin-connect@3.2.0';
+      // import {onConnected} from 'https://esm.sh/@getalby/bitcoin-connect@3.2.0?bundle-deps';
+      // import {onConnected} from 'http://localhost:8000/./demos/html/static/main.js';
+      import {onConnected} from './static/main.js';
       onConnected((provider) => {
         console.log('Connected with provider', provider);
       });
@@ -17,5 +19,6 @@
       <code> &lt;bc-button /&gt; </code>
       <bc-button></bc-button>
     </div>
+    <!-- <img src="static/terminal-red.png" /> -->
   </body>
 </html>
